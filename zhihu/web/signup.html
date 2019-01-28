@@ -21,7 +21,7 @@
 
         }
         .loginWrap{
-            width: 430px;
+            width: 436px;
             background: #fff;
             min-height:680px;
             height:calc(100% - 40px);
@@ -36,13 +36,65 @@
             height:580px;
             background: #fff;
             border: 1px solid red;
+            text-align: center;
+            padding:0 42px;
+            /*height: 450px;*/
         }
         .download{
             border: 1px solid red;
             margin-top:30px;
             height: 40px;
-            width:430px;
+            width:436px;
         }
+        .logo{
+            display: inline-flex;
+            margin:30px 0 15px 0;
+            vertical-align: top;
+        }
+        .title{
+            color: #0084FF;
+            font-size:22px;
+        }
+        .input-row{
+            border-bottom:1px solid #EBEBEB;
+            margin-top: 27px;
+        }
+        .phone{
+            text-align: left;
+            height: 35px;
+            width: 104px;
+            color:#8590A6;
+            font-size:14px;
+            display: inline-block;
+        }
+        .code{
+            display: inline-block;
+        }
+        .phone-btn{
+            margin-right: 18px;
+            float: right;
+        }
+        .sep{
+            border-left:1px solid #EBEBEB;
+            height: 20px;
+        }
+
+        .input-row input, .input-row input:focus{
+            /*color:#8590A6;*/
+            display: inline-block;
+            outline: none;
+            border: none;
+            size:20px;
+            height:22px;
+
+        }
+
+
+        .login{
+            height: 130px;
+            border: 1px solid red;
+        }
+
 
     </style>
 </head>
@@ -50,8 +102,19 @@
 <div class="singFlowHomePage">
     <div class="loginWrap">
         <div class="loginMain">
+            <img src="images/logo.png" alt="" class="logo">
+            <p class="title">关注知乎，发现更大的世界</p>
+            <div class="input-row">
+                <div class="phone">
+                    <span class="code">中国 +86</span>
+                    <span class="sep fr">&nbsp;</span>
+                    <span class="phone-btn">v</span>
+                </div>
+                <input type="text" placeholder="手机号">
 
-
+            </div>
+            <div class="message">验证码</div>
+            <div class="yuyin">语音</div>
         </div>
         <div class="download"></div>
 
